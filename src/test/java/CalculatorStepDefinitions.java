@@ -40,4 +40,11 @@ public class CalculatorStepDefinitions {
         calc.push(int2);
         calc.push("*");
     }
+
+    @When("I divide {int} by {int}")
+    public void i_divide(Integer int1, Integer int2){
+        calc.push(int1);
+        calc.push(int2);
+        calc.push("/");
+    }
 }

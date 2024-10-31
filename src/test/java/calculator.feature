@@ -24,6 +24,6 @@ Feature: Basic Arithmetic
     When I multiply 3 and 6
     Then the result is 18
 
-  Scenario: 
+  Scenario: Divide
     When I divide 18 by 6
     Then the result is 3

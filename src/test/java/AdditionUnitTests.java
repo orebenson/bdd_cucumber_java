@@ -117,4 +117,25 @@ public class AdditionUnitTests {
         assertEquals(expectedAnswer, actualAnswer);
 
     }
+
+    @Test
+    public void divide_int1_and_int2_returns_5(){
+        // ARRANGE
+        int a = 10;
+        int b = 2;
+        Number expectedAnswer = 5.0;
+        Calculator calc = new Calculator();
+        // ACT
+        calc.push(a);
+        calc.push(b);
+        calc.push("/");
+        Number actualAnswer = calc.value();
+        // ASSERT
+        assertEquals(expectedAnswer, actualAnswer);
+    }
+
+
+
+
+
 }
