@@ -26,4 +26,11 @@ public class CalculatorStepDefinitions {
         Number value = calc.value();
         assertEquals(expected, value);
     }
+
+    @When("I subtract {int} from {int}")
+    public void i_subtract_from(Integer int1, Integer int2) {
+        calc.push(int1);
+        calc.push(int2);
+        calc.push("-");
+    }
 }

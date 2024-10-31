@@ -19,3 +19,11 @@ Feature: Basic Arithmetic
       | a | b | c  |
       | 1 | 2 | 3  |
       | 3 | 7 | 10 |
+
+  Scenario:
+    When I multiply 3 and 6
+    Then the result is 18
+
+  Scenario: 
+    When I divide 18 by 6
+    Then the result is 3
