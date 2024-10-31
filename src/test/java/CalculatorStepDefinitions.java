@@ -33,4 +33,11 @@ public class CalculatorStepDefinitions {
         calc.push(int2);
         calc.push("-");
     }
+
+    @When("I multiply {int} and {int}")
+    public void i_multiply(Integer int1, Integer int2) {
+        calc.push(int1);
+        calc.push(int2);
+        calc.push("*");
+    }
 }

@@ -100,4 +100,21 @@ public class AdditionUnitTests {
         // ASSERT
         assertEquals(expectedAnswer, actualAnswer);
     }
+
+    @Test
+    public void multiply_int1_and_int2_returns_2() {
+        // ARRANGE
+        int a = 1;
+        int b = 2;
+        Number expectedAnswer = 2.0;
+        Calculator calc = new Calculator();
+        // ACT
+        calc.push(a);
+        calc.push(b);
+        calc.push("*");
+        Number actualAnswer = calc.value();
+        // ASSERT
+        assertEquals(expectedAnswer, actualAnswer);
+
+    }
 }

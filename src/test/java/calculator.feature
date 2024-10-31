@@ -20,7 +20,7 @@ Feature: Basic Arithmetic
       | 1 | 2 | 3  |
       | 3 | 7 | 10 |
 
-  Scenario:
+  Scenario: Multiplication
     When I multiply 3 and 6
     Then the result is 18
 
